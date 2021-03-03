@@ -1,0 +1,441 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+p {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+input {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(#000428, #004e92)
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 28px 0px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #ffffff;
+}
+
+.header-text {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 20px;
+}
+
+.img-header {
+    width: 90px;
+    height: 90px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.todo-main {
+    width: 100%;
+    height: 100%;
+    height: 631px;
+    /* background: url(img/popcorn-background.jpg); */
+    background: url(img/popcorn-background04.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.todo-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.todo-films-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todo-films-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.todo-films-title {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    color: #ffffff;
+    text-shadow: #4f16ff 1px 1px 6px, #16e3ff -1px -1px 6px, #4f16ff -1px 1px 6px, #16e3ff 1px -1px 6px;
+}
+
+
+.input-search-films {
+    height: 35px;
+    width: 270px;
+    background-color: rgb(255 255 255 / 66%);
+    border-radius: 22px;
+    border: 0;
+    padding-left: 10px;
+}
+
+.input-search-films:focus {
+    outline: none;
+    box-shadow: #f9d423 1px 1px 10px, #ff4e50 -1px -1px 10px;
+}
+
+.input-search-finishedFilms:focus {
+    outline: none;
+    box-shadow: #2657eb 1px 1px 10px, #ff6e6e -1px -1px 10px;
+}
+
+.img-films {
+    width: 20px;
+    cursor: pointer;
+}
+
+.item-film {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #f88888;
+    position: relative;
+}
+
+.item-finished-film {
+    border-bottom: 1px solid #8479b6;
+}
+
+/* ------------ */
+.all-films {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    width: 310px;
+    border-radius: 20px;
+    background: linear-gradient(#ff5f6d8f, #ffc37191);
+}
+
+.all-films-items {
+    height: 360px;
+    width: 280px;
+    background-color: rgb(255 255 255 / 66%);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: #f9d423 1px 1px 10px, #ff4e50 -1px -1px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+/* 
+.finished-films-items {
+    box-shadow: #265aeb 1px 1px 10px, #ff5850 -1px -1px 10px;
+} */
+
+.all-films-items::-webkit-scrollbar {
+    width: 10px;
+}
+
+.all-films-items::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#ff4e23c2, #ffc43cc7, #ff9068);
+}
+
+.all-films-items::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+
+/* ------------ */
+.finished-films {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    width: 310px;
+    border-radius: 20px;
+    /* background-color: #1e0479; */
+    background: linear-gradient(#dc24248f, #4a569d91);
+}
+
+.finished-films-items {
+    height: 360px;
+    width: 280px;
+    background-color: rgb(255 255 255 / 66%);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: #265aeb 1px 1px 10px, #ff5850 -1px -1px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.finished-films-items::-webkit-scrollbar {
+    width: 10px;
+}
+
+.finished-films-items::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#ff4e23c2, #ffc43cc7, #ff9068);
+}
+
+.finished-films-items::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#ff4e4e61, #6c18ff5e);
+}
+
+/* .finished-films-item {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #8479b6;
+} */
+
+.like-films {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    width: 310px;
+    border-radius: 20px;
+    background: linear-gradient(#ff5f6d8f, #ffc37191);
+}
+
+.like-films-items {
+    height: 360px;
+    width: 280px;
+    background-color: rgb(255 255 255 / 66%);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: #f9d423 1px 1px 10px, #ff4e50 -1px -1px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.like-films-items::-webkit-scrollbar {
+    width: 10px;
+}
+
+.like-films-items::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#ff4e23c2, #ffc43cc7, #ff9068);
+}
+
+.like-films-items::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+/* .like-films-item {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #f88888;
+} */
+
+.todo-btn-container {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    font-family: Roboto;
+    font-style: normal;
+    border: 0;
+    border-radius: 15px;
+    width: 210px;
+    height: 45px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    background: #000c34;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    background: #003d7a;
+}
+
+.btn:focus {
+    background: #003d7a;
+}
+
+.btn:active {
+    background: #003d7a;
+}
+
+/* ---------------------------------------------------------------- */
+
+footer {
+    background: linear-gradient(#000428, #004e92)
+}
+
+footer .container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.img-socials {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+ul.social {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul.social li {
+    margin-right: 40px;
+    max-width: 44px;
+    max-height: 22px;
+    width: 100%;
+}
+
+ul.social li:last-child {
+    margin-right: 0px;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* --------- Modal Window --------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 173px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 5px 20px 20px 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+}
+
+span {
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+.input-add-film {
+    margin-top: 55px;
+    width: 95%;
+    border: 0;
+    border-bottom: 1px solid #000428;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.input-add-film:focus {
+    outline: none;
+}

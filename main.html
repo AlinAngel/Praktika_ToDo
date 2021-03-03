@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img class="img-header" src="img/clapperboard.svg">
+                <div class="header-info">
+                    <div class="header-title">
+                        <h1>Movie</h1>
+                    </div>
+                    <div class="header-text">
+                        <h2>m a r a t h o n</h2>
+                    </div>
+                </div>
+                <img class="img-header" src="img/pop-corn.svg">
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section class="todo-main">
+        <div class="container">
+            <div class="todo-content">
+                <div class="todo-films-container">
+                    <div class="todo-films-content">
+                        <h2 class="todo-films-title">To watch</h2>
+                        <div class="all-films">
+                            <div class="all-films-items">
+
+                                <div class="item-film">
+                                    <p>Пираты Карибского моря: Мертвецы не рассказывают сказки</p>
+                                    <div class="all-films-itemImg">
+                                        <img src="img/eye.png" class="img-films move-btn">
+                                        <img src="img/trash-bin.png" class="img-films remove-btn">
+                                    </div>
+                                </div>
+                                <div class="item-film">
+                                    <p>Titanic</p>
+                                    <div class="all-films-itemImg">
+                                        <img src="img/eye.png" class="img-films move-btn">
+                                        <img src="img/trash-bin.png" class="img-films remove-btn">
+                                    </div>
+                                </div>
+                                <div class="item-film">
+                                    <p>Хроники Нарнии: Лев, Колдунья и Волшебный Шкаф</p>
+                                    <div class="all-films-itemImg">
+                                        <img src="img/eye.png" class="img-films move-btn">
+                                        <img src="img/trash-bin.png" class="img-films remove-btn">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form>
+                                <input type="text" class="input-search-films" placeholder="Search..">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="todo-films-content">
+                        <h2 class="todo-films-title">Watched</h2>
+                        <div class="finished-films">
+                            <div class="finished-films-items">
+                                <div class="item-film item-finished-film">
+                                    <p>Love, Rosie</p>
+                                    <div class="all-films-itemImg">
+                                        <img src="img/heart.png" class="img-films like-btn">
+                                        <img src="img/trash-bin.png" class="img-films remove-btn">
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <input type="text" class="input-search-films input-search-finishedFilms"
+                                    placeholder="Search..">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="todo-films-content">
+                        <h2 class="todo-films-title">Favorite</h2>
+                        <div class="like-films">
+                            <div class="like-films-items">
+                                <div class="item-film">
+                                    <p>Seven</p>
+                                    <div class="all-films-itemImg">
+                                        <img src="img/broken-heart.png" class="img-films unlike-btn">
+                                        <img src="img/trash-bin.png" class="img-films remove-btn">
+                                    </div>
+                                </div>
+                                <div class="item-film">
+                                    <p>9</p>
+                                    <div class="all-films-itemImg">
+                                        <img src="img/broken-heart.png" class="img-films unlike-btn">
+                                        <img src="img/trash-bin.png" class="img-films remove-btn">
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <input type="text" class="input-search-films" placeholder="Search..">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="todo-btn-container">
+                    <button class="btn" id="btn-add-film">Добавить фильм</button>
+                </div>
+
+                <div id="my-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="close-btn">&times;</span>
+                        <form id="add-film-form">
+                            <input class="input-add-film" type="text" name="addFilmInput"
+                                placeholder="Введите название фильма">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="description">
+                <h3>Алина Сикачева</h3>
+                <p class="copyright"> © 2021. Все права защищены.</p>
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="https://vk.com/id132190303" target="_blank">
+                        <img class="img-socials" src="img/vk.png"></a>
+                </li>
+                <li>
+                    <a href="http://instagram.com/flawless.control" target="_blank">
+                        <img class="img-socials" src="img/instagram.png"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>

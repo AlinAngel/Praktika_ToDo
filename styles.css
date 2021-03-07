@@ -6,6 +6,7 @@ body {
 }
 
 p {
+    width: 214px;
     margin: 0px;
     font-weight: normal;
     font-size: 16px;
@@ -134,7 +135,6 @@ header {
     text-shadow: #4f16ff 1px 1px 6px, #16e3ff -1px -1px 6px, #4f16ff -1px 1px 6px, #16e3ff 1px -1px 6px;
 }
 
-
 .input-search-films {
     height: 35px;
     width: 270px;
@@ -154,7 +154,18 @@ header {
     box-shadow: #2657eb 1px 1px 10px, #ff6e6e -1px -1px 10px;
 }
 
-.img-films {
+.img-item-film {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-films-L {
+    width: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.img-films-R {
     width: 20px;
     cursor: pointer;
 }
@@ -173,7 +184,12 @@ header {
     border-bottom: 1px solid #8479b6;
 }
 
+.hide {
+    display: none;
+}
+
 /* ------------ */
+
 .all-films {
     display: flex;
     flex-direction: column;
@@ -195,10 +211,6 @@ header {
     overflow: auto;
     overflow-x: hidden;
 }
-/* 
-.finished-films-items {
-    box-shadow: #265aeb 1px 1px 10px, #ff5850 -1px -1px 10px;
-} */
 
 .all-films-items::-webkit-scrollbar {
     width: 10px;
@@ -215,6 +227,7 @@ header {
 }
 
 /* ------------ */
+
 .finished-films {
     display: flex;
     flex-direction: column;
@@ -252,15 +265,6 @@ header {
     background: linear-gradient(#ff4e4e61, #6c18ff5e);
 }
 
-/* .finished-films-item {
-    width: 260px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    border-bottom: 1px solid #8479b6;
-} */
-
 .like-films {
     display: flex;
     flex-direction: column;
@@ -296,17 +300,9 @@ header {
     box-shadow: inset 0 0 6px rgb(0 0 0 / 20%);
     border-radius: 10px;
 }
-/* .like-films-item {
-    width: 260px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    border-bottom: 1px solid #f88888;
-} */
 
 .todo-btn-container {
-    margin-bottom: 35px;
+    margin: 35px 0;
     display: flex;
     justify-content: flex-end;
 }
@@ -316,7 +312,7 @@ header {
     font-style: normal;
     border: 0;
     border-radius: 15px;
-    width: 210px;
+    width: 185px;
     height: 45px;
     font-weight: normal;
     font-size: 16px;
@@ -438,4 +434,33 @@ span {
 
 .input-add-film:focus {
     outline: none;
+}
+
+@media (max-width: 984px) {
+    .todo-films-container {
+        flex-direction: column;
+    }
+    .todo-main {
+        height: auto;
+        /* padding-bottom: 35px; */
+    }
+}
+
+@media (max-width: 1220px) {
+    footer {
+        padding: 0 20px
+    }
+}
+
+@media (max-width: 440px) {
+    .img-header {
+        width: 65px;
+        height: 65px;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 20px;
+    }
 }
